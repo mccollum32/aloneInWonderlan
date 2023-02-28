@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 * Feb 26 23
 * CSC 153
 * McCollum Joseph
-* Program description
+* Console strategy based game gives the user the choice to choose from the menu options using a switch statement.
 */
 
 namespace ConsoleUI

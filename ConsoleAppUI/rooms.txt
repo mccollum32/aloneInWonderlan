@@ -1,0 +1,6 @@
+﻿Entry way
+Hallway
+Kitchen
+Backyard
+Street
+Home

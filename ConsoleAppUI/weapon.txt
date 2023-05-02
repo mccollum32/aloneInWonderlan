@@ -1,5 +1,6 @@
-﻿Knife
-Screwdriver
-Baseball bat
-B.B Gun (2 clips)
-None (Hands)
+﻿1. Knife
+2. Screwdriver
+3. Baseball bat
+4. B.B Gun (2 clips)
+5. None (Hands)
+**********

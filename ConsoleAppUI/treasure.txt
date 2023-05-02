@@ -1,4 +1,5 @@
-﻿Gold
-Jewlery
-Diamond
-Copper plates
+﻿1. Gold
+2. Jewlery
+3. Diamond
+4. Copper plates
+**********

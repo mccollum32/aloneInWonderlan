@@ -1,2 +1,3 @@
-﻿Partial Potion (50% Health)
-Super Potion (Full Health)
+﻿1. Partial Potion (50% Health)
+2. Super Potion (Full Health)
+**********

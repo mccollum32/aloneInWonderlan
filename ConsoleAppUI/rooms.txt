@@ -1,6 +1,7 @@
-﻿Entry way
-Hallway
-Kitchen
-Backyard
-Street
-Home
+﻿1. Entry hallway
+2. Hallway
+3. Kitchen
+4. Backyard
+5. Street
+6. Home
+**********

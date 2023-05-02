@@ -3,25 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace GameMethodLibrary
 {
-    class Room
+    public class Room
     {
-        private int _idNumber;
-        private string _name;
-        private string _description;
-        private string _exit;
-        private string _list;
-
-        public Room (int idNumber, string name, string description, string exit , string list)
-        {
-            _idNumber = idNumber;
-            _name = name;
-            _description = description;
-            _exit = exit;
-            _list = list;
-        }
-
+        public int _idNumber;
+        public string _name;
+        public string _description;
+        public string _exit ;           
+        public string[] roomList = {"Entry hallway", "Hallway", "Kitchen", "Backyard", "Street", "Home" }; 
+        
+        
     }
 }

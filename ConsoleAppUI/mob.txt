@@ -1,5 +1,6 @@
-﻿Wild bear
-Looters
-Fungal Mob
-Infected foot soliders (3)
-Wild Dogs
+﻿1. Wild bear
+2. Looters
+3. Fungal Mob
+4. Infected foot soliders (3)
+5. Wild Dogs
+**********

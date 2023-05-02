@@ -14,7 +14,7 @@ namespace GameMethodLibrary
             Console.WriteLine("***---***---Alone In Wonderland---***---***");
             Console.WriteLine("");
             Console.WriteLine("Choose from the following options. ");
-            Console.WriteLine(" Main Menu \n 1. Display Rooms   \n 2. Display Weapon \n 3. Display Potion \n 4. Display Treasures \n 5. Display Items \n 6. Display Mobs \n 7. Exit");
+            Console.WriteLine(" Main Menu \n 1. Display Rooms   \n 2. Display Weapon \n 3. Display Potion \n 4. Display Treasures \n 5. Display Items \n 6. Display Mobs \n 7. Start Game \n 8. Exit");
             Console.WriteLine("");
             Console.WriteLine("***---------*******************---------***");
         }

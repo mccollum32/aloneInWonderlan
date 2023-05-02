@@ -20,47 +20,88 @@ namespace GameMethodLibrary
         }
         public static void Rooms()
         {
-            Console.WriteLine("1. Entry way");
-            Console.WriteLine("2. Hallway");
-            Console.WriteLine("3. Kitchen");
-            Console.WriteLine("4. Backyard");
-            Console.WriteLine("5. Street");
+            const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/rooms.txt";
+            StreamReader read = new StreamReader(path);
+
+            var line = read.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = read.ReadLine();
+            }
+            read.Close();
         }
+
         public static void Weapons()
         {
-            Console.WriteLine("1. Knife");
-            Console.WriteLine("2. Screwdriver");
-            Console.WriteLine("3. Baseball bat");
-            Console.WriteLine("4. None (Hands)");
+                const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/weapon.txt";
+                StreamReader read = new StreamReader(path);
+
+                var line = read.ReadLine();
+
+                while (line != null)
+                {
+                    Console.WriteLine(line);
+                    line = read.ReadLine();
+                }
+                read.Close();
         }
         public static void Treasure()
         {
-            Console.WriteLine("1. Gold");
-            Console.WriteLine("2. Jewlery");
-            Console.WriteLine("3. Diamond");
+            const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/treasure.txt";
+            StreamReader read = new StreamReader(path);
+
+            var line = read.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = read.ReadLine();
+            }
+            read.Close();
         }
         public static void Items()
         {
-            Console.WriteLine("1. Key");
-            Console.WriteLine("2. Repel");
-            Console.WriteLine("3. Documents");
-            Console.WriteLine("4. Bottle");
+            const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/items.txt";
+            StreamReader read = new StreamReader(path);
+
+            var line = read.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = read.ReadLine();
+            }
+            read.Close();
         }
         public static void Mobs()
         {
-            Console.WriteLine("1. Wild bear");
-            Console.WriteLine("2. Looters");
-            Console.WriteLine("3. Fungal Mob");
-            Console.WriteLine("4. Infected foot soliders (3)");
-            Console.WriteLine("5. Wild Dogs");
-        }
+            const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/mob.txt";
+            StreamReader read = new StreamReader(path);
+
+            var line = read.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = read.ReadLine();
+            }
+            read.Close();     
+        }     
         public static void Potions()
         {
-            Console.WriteLine("1. Partial Potion");
-            Console.WriteLine("2. Super Potion");
+            const string path = "G:/Programming/aloneInWonderlan/ConsoleAppUI/potion.txt";
+            StreamReader read = new StreamReader(path);
+
+            var line = read.ReadLine();
+
+            while (line != null)
+            {
+                Console.WriteLine(line);
+                line = read.ReadLine();
+            }
+            read.Close();
         }
     }
 }
-
-//Items
-//Mobs

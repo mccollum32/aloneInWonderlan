@@ -53,6 +53,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="items.txt" />
+    <Content Include="mob.txt" />
     <Content Include="potion.txt" />
     <Content Include="rooms.txt" />
     <Content Include="treasure.txt" />

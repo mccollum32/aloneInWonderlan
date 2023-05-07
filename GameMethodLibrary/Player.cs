@@ -8,19 +8,23 @@ namespace GameMethodLibrary
 {
     public class Player
     {
+        public static Random rand = new Random();
+
         //Player Information / Stats
         public static string playerName;
-        public static string group;
-        public static string[] groupSelect = {"Elder" , "Adult", "Teen" } ;
-        public static double playerHealth = 100;
 
         //Players Current Weapon state / Weapons [weapon stats]
-        public static string weaponName; 
-        public static string currentWeapon = string.Empty;
-        public static int weaponSelect;
-        public static string[] weapons = { "Knife", "Screwdriver", "Baseball bat", "B.B Gun(2 clips)", "Brick" ,"None(Hands)" };
-        public static string[] weaponStrength = { "100 - 90", "89 - 70", "69 - 50", "49 - 30", "29 - 10" };
+        public static int weaponSelection;
+        public static string weaponOption;
+        public static int weaponPOW;
+
+        // Random Weapon choices
+        public static string weapon;
         public static string weaponPower;
+        public static string[] weaponList = { "short sword", "Long sword", "Kitana sword", "Battle Axe", "Dagger" };
+        public static string[] weaponStrength = { "100", "70", "80", "50", "0" };
+        public static int weaponPick = rand.Next(weaponList.Length);
+        public static int weaponPow = rand.Next(weaponStrength.Length);
 
         public void PlayerName()
         {
@@ -29,45 +33,64 @@ namespace GameMethodLibrary
 
         public void WeaponSelect()
         {
-            weaponSelect = new Random().Next(1, 6); 
-            if(weaponSelect == 1)
+            Console.WriteLine("Select a Weapon: \n[1].Knife \n[2]Screwdriver\n[3]Baseball bat\n[4]B.B gun( 2 clips)\n[5]Brick\n[6]Hands.\n[7]Exit.");
+            Console.WriteLine("********************");
+            int weaponSelection = Convert.ToInt32(Console.ReadLine());
+
+            if (weaponSelection == 1)
             {
-                weaponName = "Knife";
-                weaponPower = "100 - 90";
+                weaponOption = "Knife";
+                weaponPOW = 100;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
             }
-            else if(weaponSelect == 2)
+            else if (weaponSelection == 2)
             {
-                weaponName = "Screwdriver";
-                weaponPower = "49 - 30";
+                weaponOption = "Screwdriver";
+                weaponPOW = 50;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
             }
-            else if(weaponSelect == 3)
+            else if (weaponSelection == 3)
             {
-                weaponName = "Baseball bat";
-                weaponPower = "89 - 70";
+                weaponOption = "Baseball bat";
+                weaponPOW = 80;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
 
             }
-            else if(weaponSelect == 4)
+            else if (weaponSelection == 4)
             {
-                weaponName = "B.B Gun(2 clips)";
-                weaponPower = "29 - 10";
-
+                weaponOption = "B.B Gun(2 clips)";
+                weaponPOW = 0;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
             }
-            else if (weaponSelect == 5)
+            else if (weaponSelection == 5)
             {
-                weaponName = "Brick";
-                weaponPower = "69 - 50";
-
+                weaponOption = "Brick";
+                weaponPOW = 70;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
             }
-            else if(weaponSelect == 6)
+            else if (weaponSelection == 6)
             {
-                weaponName = "None(Hands)";
-                weaponPower = "29 - 10";
-
+                weaponOption = "Hands";
+                weaponPOW = 0;
+                Console.WriteLine("Player chose: \n" + weaponOption + "\nWeapon Strength: " + weaponPOW);
+                Console.WriteLine("********************");
             }
             else
             {
-                currentWeapon = "";
+                Console.WriteLine("No Weapon Selected!");
+                Console.WriteLine("********************");
             }
+        }
+
+        public void WeaponRandom()
+        {
+            weapon = weaponList[rand.Next(weaponList.Length)];
+            Console.WriteLine($"Randomly seleceted weapon: {weaponList[weaponPick]} \nWeapon Strength: {weaponStrength[weaponPow]}");
         }
     }
 }

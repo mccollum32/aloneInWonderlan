@@ -19,8 +19,10 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Player mainPlayer = new Player();
+            Player player = new Player();
             Room _room = new Room();
+            Potion potion = new Potion();
+            Mob infected = new Mob();
 
             GameLab.Menu();
 
@@ -71,8 +73,7 @@ namespace ConsoleUI
                         break;
                     case 7:
                         Console.WriteLine("**********");
-                        Console.WriteLine("Starting Game. ");
-                        GameLoop.GameRun();
+                        Console.WriteLine("Starting Game. ");                        
                         break;
                     case 8:
                         Console.WriteLine("**********");
@@ -86,28 +87,26 @@ namespace ConsoleUI
                 {
                     end = true;
                 }     
+                else if (choices == 7)
+                {
+                    bool stop = false;
+                    while(stop == false)
+                    {
+                        Console.WriteLine("You are stuck in Wonderland! Everything around is in ruind. You have to find a way back home to safety and back to your family!");
+                        Console.WriteLine("What is your name? ");
+                        player.PlayerName();
+                    }
+                    stop = true;
+                    Console.WriteLine("The Player is dead! GAME OVER!" + stop);
+                    Console.ReadKey();
+                }
                 else
                 {
-                    GameLoop.GameRun();
+                    Console.WriteLine("Invalid Input! Try again.");
                 }
             }
             
             Console.ReadKey();
         }
-    }
-    class GameLoop
-    {
-
-        public static void GameRun()
-        {
-            bool end = false;
-
-            while (end == false)
-            {
-                Console.WriteLine("What is your name? ");
-                string name = Console.ReadLine();
-                Console.WriteLine("Welcome to WonderLand " + name + " this is a strategy based game so use your brain and dont get carless in there!");
-            }
-        }
-    }
+    }    
 }

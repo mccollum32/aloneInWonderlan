@@ -19,7 +19,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            
+            Player mainPlayer = new Player();
+            Room _room = new Room();
+
             GameLab.Menu();
 
             double rooms = 5;
@@ -83,7 +85,7 @@ namespace ConsoleUI
                 if (choices == 1 || choices == 2 || choices == 3 || choices == 4 || choices == 5 || choices == 6 || choices == 8)
                 {
                     end = true;
-                }
+                }     
                 else
                 {
                     GameLoop.GameRun();

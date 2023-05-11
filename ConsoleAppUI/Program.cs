@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using GameMethodLibrary;
 using System.IO;
+using System.Threading;
 
 /**
 * Feb 26 23
 * CSC 153
 * McCollum Joseph
-* Console strategy based game gives the user the choice to choose from the menu options using a switch statement.
+* Console strategy based game with survival strategy and a mix of horror. Still adding more to this one as I make the story up. Will be making changes
+* in the near future to get the game to flow well. Added Classes/Methods/Switch statements/ If else statements/ Random.
 */
 
 namespace ConsoleUI
@@ -93,8 +95,12 @@ namespace ConsoleUI
                     while(stop == false)
                     {
                         Console.WriteLine("You are stuck in Wonderland! Everything around is in ruind. You have to find a way back home to safety and back to your family!");
+                        Thread.Sleep(1500);
                         Console.WriteLine("What is your name? ");
+                        Thread.Sleep(1500);
                         player.PlayerName();
+                        Console.WriteLine($"Welcome to your new last day in wonderland!");
+
                     }
                     stop = true;
                     Console.WriteLine("The Player is dead! GAME OVER!" + stop);
